@@ -1,0 +1,37 @@
+
+:root {
+    --body : white;
+
+}
+
+:root:has(body.night) {
+    --body : black;
+
+}
+
+body {
+
+    display: grid;
+    justify-content: center;
+    align-content: start;
+
+    .calculator {
+        background-color: lightgray;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 0.2rem;
+
+        .result {
+            background-color: wheat;
+            text-align: end;
+            padding: 0.2rem 0.6rem;
+        }
+
+        #numberInp {
+            text-align: end;
+            padding: 0.2rem 0.6rem;
+
+        }
+    }
+}
